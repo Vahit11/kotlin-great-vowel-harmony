@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         var numberIsThere = false
         val inputValue = binding.etInput.text.toString()
         if (inputValue.isNotEmpty()) {
-            binding.tvOutput.isVisible = true
             for (charter in inputValue.toCharArray()) {
                 if (thick.contains(charter.toString())) {
                     thickIsThere = true
@@ -40,8 +39,8 @@ class MainActivity : AppCompatActivity() {
                     numberIsThere = true
                 }
             }
+            binding.tvOutput.isVisible = true
             if (numberIsThere) {
-                println("Lütfen rakam girmeyiniz!!!")
                 binding.tvOutput.text = "\"$inputValue\" Bir rakam"
             } else if (thickIsThere && thinIsThere) {
                 binding.tvOutput.text = "\"$inputValue\" Büyük ünlü uyumuna uymaz"
