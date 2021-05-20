@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:background="@android:color/white"
-                android:hint="Sözcük giriniz..."
+                android:hint="@string/enter_word"
                 android:padding="10dp"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black" />
@@ -37,7 +37,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:gravity="center"
-                android:text="@string/app_name"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:visibility="gone" />
@@ -49,7 +48,8 @@
                 android:layout_margin="20dp"
                 android:backgroundTint="@android:color/black"
                 android:onClick="checkIt"
-                android:text="Kontrol Et" />
+                android:text="@string/check_it"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 

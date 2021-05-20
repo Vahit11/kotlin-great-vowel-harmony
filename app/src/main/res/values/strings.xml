@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KotlinGreatVowelharmony</string>
+    <string name="check_it">Kontrol Et</string>
+    <string name="enter_word">Sözcük giriniz...</string>
 </resources>
